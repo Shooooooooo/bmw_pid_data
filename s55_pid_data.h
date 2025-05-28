@@ -3,18 +3,9 @@
 #define S55_PID_DATA_H
 
 #include <stddef.h>
+#include "bmw_pid_entry.h"
 
-typedef struct {
-    unsigned int pid;
-    const char * description;
-    const char * units;
-    const char * data_type;
-    double multiply;
-    double divide;
-    double add;
-} s55_pid_data_entry;
-
-static const s55_pid_data_entry s55_pid_data_data[] = {
+static const bmw_pid_entry s55_pid_data_data[] = {
     {0x4201, "Ambient pressure", "hPa", "unsigned int", 0.0390625, 1, 0},
     {0x4205, "Boost pressure", "hPa", "unsigned int", 0.078125, 1, 0},
     {0x4206, "Mass flow through throttle valve", "kg/h", "unsigned int", 0.03125, 1, 0},

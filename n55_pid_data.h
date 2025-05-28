@@ -3,18 +3,9 @@
 #define N55_PID_DATA_H
 
 #include <stddef.h>
+#include "bmw_pid_entry.h"
 
-typedef struct {
-    unsigned int pid;
-    const char * description;
-    const char * units;
-    const char * data_type;
-    double multiply;
-    double divide;
-    double add;
-} n55_pid_data_entry;
-
-static const n55_pid_data_entry n55_pid_data_data[] = {
+static const bmw_pid_entry n55_pid_data_data[] = {
     {0x4201, "Ambient pressure", "hPa", "unsigned integer", 0.0390625, 1, 0},
     {0x4205, "Boost pressure", "hPa", "unsigned integer", 0.078125, 1, 0},
     {0x4300, "Coolant temperature", "Â°C", "unsigned char", 0.75, 1, -48},

@@ -34,19 +34,17 @@ def csv_to_header(csv_path):
         reader = csv.reader(f)
         header = next(reader)
         fields = get_struct_fields(header)
-        struct_name = re.sub(r'[^a-zA-Z0-9]', '_', base) + '_entry'
+        # Use the common struct from bmw_pid_entry.h
+        struct_name = 'bmw_pid_entry'
         array_name = base + '_data'
         count_macro = base.upper() + '_DATA_COUNT'
         # Write header file
         with open(h_path, 'w', encoding='utf-8') as out:
             out.write(f"// Auto-generated from {os.path.basename(csv_path)}\n")
             out.write(f"#ifndef {base.upper()}_H\n#define {base.upper()}_H\n\n")
-            out.write(f"#include <stddef.h>\n\n")
-            # Struct definition
-            out.write(f"typedef struct {{\n")
-            for ctype, cname, _ in fields:
-                out.write(f"    {ctype} {cname};\n")
-            out.write(f"}} {struct_name};\n\n")
+            out.write(f"#include <stddef.h>\n")
+            out.write(f"#include \"bmw_pid_entry.h\"\n\n")
+            # No struct definition here, just use the common one
             # Array definition
             out.write(f"static const {struct_name} {array_name}[] = {{\n")
             for row in reader:
