@@ -1,0 +1,544 @@
+PID,Description,Units,Data Type,Multiply,Divide,Add
+0x4201,Ambient pressure,hPa,unsigned int,10,256,0
+0x4205,Boost pressure,hPa,unsigned int,20,256,0
+0x4206,Mass flow through throttle valve bank 1,kg/h,unsigned int,1,32,0
+0x4300,Coolant temperature,Â°C,signed int,0.1,1,-273.14
+0x4306,Confirmed target speed electr. water pump,1/min,unsigned char,1,1,0
+0x4307,Status message electr. water pump,-,unsigned char,1,1,0
+0x4310,Target temperature coolant,-,signed int,1,100,0
+0x4402,Oil temperature after filter,Â°C,unsigned int,0.75,1,-48
+0x4403,Fuel consumption since the last oil change,-,unsigned long,1,8192,0
+0x4404,Kilometers of oil,km,unsigned int,10,1,0
+0x4408,Oil temperature unfiltered,Â°C,signed int,0.1,1,-273.14
+0x4409,Unfiltered oil level,mm,signed int,0.004,1,0
+0x4411,Remaining distance derived from fuel consumption,-,signed int,1,0.1,0
+0x4412,Oil life,mth,unsigned int,1,1,0
+0x4421,Oil pressure regulator P component,-,signed int,2,65536,0
+0x4422,Oil pressure regulator I component,-,signed int,2,65536,0
+0x4423,Oil pressure regulator D component,-,signed int,2,65536,0
+0x4425,Oil temperature in the sump,Â°C,signed int,1,10,0
+0x4426,"Actual operating mode, oil pressure control",-,unsigned char,1,1,0
+0x442C,Raw value oil level,mm,unsigned char,1,1,0
+0x442F,Relative engine oil level in cl above minimum,cl,unsigned char,1,1,0
+0x4436,Actual oil pressure value (absolute pressure),hPa,unsigned int,1,1,0
+0x4501,Integrated offset stroke adaptation,-,signed int,0.001,1,0
+0x4505,Target angle (inlet VANOS),Â° KW,signed int,1,128,0
+0x4506,Angle of the inlet NW flanks relative to the crankshaft,Â° KW,signed int,0.02197266,1,0
+0x4507,Angle of the outlet NW flanks relative to the crankshaft,Â° KW,signed int,0.02197266,1,0
+0x4516,Status VVT stop learning (internal),-,unsigned char,1,1,0
+0x4520,Effective engine power,-,unsigned int,1000,65536,0
+0x4521,Fuel mass flow,kg/h,unsigned int,0.1,1,0
+0x4522,"Fuel mass homogeneous as target value, cylinder 1",mg/stroke,unsigned int,1389,65535,0
+0x4523,"Fuel mass homogeneous as target value, cylinder 2",mg/stroke,unsigned int,1389,65535,0
+0x4524,"Fuel mass homogeneous as target value, cylinder 3",mg/stroke,unsigned int,1389,65535,0
+0x4525,"Fuel mass homogeneous as target value, cylinder 4",mg/stroke,unsigned int,1389,65535,0
+0x4526,"Fuel mass homogeneous as target value, cylinder 5",mg/stroke,unsigned int,1389,65535,0
+0x4527,"Fuel mass homogeneous as target value, cylinder 6",mg/stroke,unsigned int,1389,65535,0
+0x452A,Setpoint outlet spread variable NWS,Â° KW,signed int,1,10,0
+0x452B,Setpoint inlet spread variable NWS,Â° KW,signed int,1,10,0
+0x452C,Actual value of the outlet spread,Â° KW,signed int,1,10,0
+0x452E,Actual value inlet spread,Â° KW,signed int,1,10,0
+0x4530,"Injection mode, cylinder 1",-,unsigned char,1,1,0
+0x4531,"Injection mode, cylinder 2",-,unsigned char,1,1,0
+0x4532,"Injection mode, cylinder 3",-,unsigned char,1,1,0
+0x4533,"Injection mode, cylinder 4",-,unsigned char,1,1,0
+0x4534,"Injection mode, cylinder 5",-,unsigned char,1,1,0
+0x4535,"Injection mode, cylinder 6",-,unsigned char,1,1,0
+0x4536,Control difference boost pressure - bank-specific bank 1,hPa,signed int,125,1000,0
+0x4537,Control difference boost pressure - bank-specific bank 2,hPa,signed int,0.125,1,0
+0x4600,Throttle valve angle related to the lower stop,%,signed int,0.0078125,1,0
+0x4601,"Target value for throttle valve angle, based on (lower) stop",%,unsigned int,100,65536,0
+0x4603,Inlet valve lift setpoint filtered,mm,unsigned int,1,1000,0
+0x4604,Output current of the machine,A,signed int,1,8,0
+0x4606,Current battery current,A,unsigned int,0.08,1,-200
+0x460D,Correction value shutdown,%,unsigned int,0.004,1,-100
+0x460E,Distance to starting ability,%,unsigned int,0.004,1,-100
+0x4617,Decreased moment of the electric machine,Nm,signed int,1,10,0
+0x4650,Transmission temperature,Â°C,unsigned char,0.75,1,-48
+0x4653,Sensor voltage position sensor electrical wastegate,V,unsigned int,80,65536,0
+0x4654,Raw value position sensor electrical wastegate,mm,signed int,64,65536,0
+0x4655,Sensor voltage position sensor electrical wastegate bank 2,V,unsigned int,80,65536,0
+0x4656,Raw value position sensor electrical wastegate bank 2,mm,signed int,64,65536,0
+0x4659,Should position EEC,mm,signed int,0.00097656,1,0
+0x465A,Should position EWG 2,mm,signed int,0.00097656,1,0
+0x4683,Speed gear input,1/min,unsigned int,0.1453421,1,0
+0x4703,Offset corrected probe voltage in front of Kat of a broadband lambda probe bank 2,V,unsigned int,1,2048,0
+0x4712,Number of dense EVAP systems recognized by diagnosis,-,unsigned char,1,1,0
+0x4807,Engine speed,1/min,signed int,1,2,0
+0x4808,Target idle speed,1/min,signed int,0.5,1,0
+0x480B,Normalized accelerator pedal angle,%,signed int,0.01220703,1,0
+0x480C,Target filling,%,unsigned int,0.75,32,0
+0x480D,Is the longitudinal slope of the roadway,Â°,unsigned int,0.05,1,-64
+0x4810,Is banked road surface,Â°,unsigned int,0.05,1,-64
+0x4811,Vehicle longitudinal acceleration,m/sÂ²,signed char,0.217,1,0
+0x4812,Vehicle lateral acceleration (positive and negative),m/sÂ²,signed int,1,640,0
+0x48D0,Estimation of the distance until the OPF is fully loaded with ash,km,unsigned int,10,1,0
+0x4A00,Average distance between critical DMF faults,km,unsigned int,1,1,0
+0x4A01,Average value of the time interval between critical ZMS faults,min,unsigned int,10,1,0
+0x4A12,Heating voltage in front of the cat of a broadband lambda probe (ADC value) bank 2,V,unsigned int,0.00488281,1,0
+0x4A1D,Brake booster pressure sensor voltage,V,unsigned int,5,1024,0
+0x4A21,Coolant temperature (sensor value) after low-pass filtering,Â°C,signed int,0.1,1,-273.14
+0x4A2D,Intake manifold absolute pressure measured,hPa,unsigned int,20,256,0
+0x4A30,Uneven running of cylinder 1,rad/sÂ²,signed int,1,16,0
+0x4A31,Uneven running cylinder 2,rad/sÂ²,signed int,1,16,0
+0x4A32,Uneven running cylinder 3,rad/sÂ²,signed int,1,16,0
+0x4A33,Uneven running cylinder 4,rad/sÂ²,signed int,1,16,0
+0x4A34,Uneven running cylinder 5,rad/sÂ²,signed int,1,16,0
+0x4A35,Uneven running cylinder 6,rad/sÂ²,signed int,1,16,0
+0x4A37,Normalized reference level knock control cylinder 1,V*ms,unsigned long,0.05,65536,0
+0x4A38,Normalized reference level knock control cylinder 2,V*ms,unsigned long,0.05,65536,0
+0x4A39,Normalized reference level knock control cylinder 3,V*ms,unsigned long,0.05,65536,0
+0x4A3A,Normalized reference level knock control cylinder 4,V*ms,unsigned long,0.05,65536,0
+0x4A3B,Normalized reference level of knock control cylinder 5,V*ms,unsigned long,0.05,65536,0
+0x4A3C,Normalized reference level of knock control cylinder 6,V*ms,unsigned long,0.05,65536,0
+0x4A43,Uneven running cylinder 7,rad/sÂ²,signed int,1,16,0
+0x4A44,Uneven running cylinder 8,rad/sÂ²,signed int,1,16,0
+0x4A45,Uneven running cylinder 9,rad/sÂ²,signed int,1,16,0
+0x4A46,Uneven running cylinder 10,rad/sÂ²,signed int,1,16,0
+0x4A47,Uneven running cylinder 11,rad/sÂ²,signed int,1,16,0
+0x4A48,Uneven running cylinder 12,rad/sÂ²,signed int,1,16,0
+0x4A49,Firing angle cylinder 1,Â° KW,signed int,1,10,0
+0x4A4A,Firing angle cylinder 2,Â° KW,signed int,1,10,0
+0x4A4C,Firing angle cylinder 3,Â° KW,signed int,1,10,0
+0x4A4D,Firing angle cylinder 4,Â° KW,signed int,1,10,0
+0x4A4E,Firing angle cylinder 5,Â° KW,signed int,1,10,0
+0x4A4F,Firing angle cylinder 6,Â° KW,signed int,1,10,0
+0x4A51,Lambda actual value sensor 1 bank 2,-,unsigned int,0.00024414,1,0
+0x4A5B,Normalized heating output of lambda probe 2 behind cat bank 2,-,unsigned char,0.01,1,0
+0x4A6C,Correction factor for the amount of fuel,%,signed char,1,1000,0
+0x4A77,Output duty cycle for tank vent valve,%,unsigned int,100,65536,0
+0x4A94,Saved camshaft target angle exhaust,Â° KW,signed int,0.015625,1,0
+0x4A9D,Multiplicative mixture correction of the mixture adaptation,-,unsigned int,2,65536,0
+0x4A9E,Multiplicative mixture correction of mixture adaptation bank 2,-,unsigned int,2,65536,0
+0x4AB0,Boost pressure setpoint,hPa,unsigned int,10,256,0
+0x4AB1,Vehicle speed,km/h,signed int,0.01,1,0
+0x4ACC,Air damper - target position in steps,-,unsigned int,1,1,0
+0x4ACD,Air damper - actual position in steps,-,unsigned int,1,1,0
+0x4AD2,Air flap - upper air flap status,-,unsigned char,1,1,0
+0x4AD3,Air flap - lower air flap status,-,unsigned char,1,1,0
+0x4AD5,Fuel temperature,Â°C,unsigned char,0.75,1,-48
+0x4AEB,Motor temperature less than 98 Â° C,%,unsigned int,100,65536,0
+0x4AEC,Motor temperature between 98 Â° C and 112 Â° C,%,unsigned int,100,65536,0
+0x4AED,Motor temperature between 113 Â° C and 120 Â° C,%,unsigned int,100,65536,0
+0x4AEE,Motor temperature between 121 Â° C and 125 Â° C,%,unsigned int,100,65536,0
+0x4AEF,Motor temperature greater than 125 Â° C,%,unsigned int,100,65536,0
+0x4AF0,Temperature less than 80 Â° C,%,unsigned int,100,65536,0
+0x4AF4,Temperature greater than 150 Â° C,%,unsigned int,100,65536,0
+0x4AF5,Gearbox temperature less than 80 Â° C,%,unsigned int,100,65536,0
+0x4AF6,Gearbox temperature between 80 Â° C and 109 Â° C,%,unsigned int,100,65536,0
+0x4AF7,Gearbox temperature between 110 Â° C and 124 Â° C,%,unsigned int,100,65536,0
+0x4AF8,Gearbox temperature between 125 Â° C and 129 Â° C,%,unsigned int,100,65536,0
+0x4AF9,Gearbox temperature greater than 129 Â° C,%,unsigned int,100,65536,0
+0x4AFA,Ambient temperature less than 3 Â° C,%,unsigned int,100,65536,0
+0x4AFB,Ambient temperature between 3 Â° C and 19 Â° C,%,unsigned int,100,65536,0
+0x4AFC,Ambient temperature between 20 Â° C and 29 Â° C,%,unsigned int,100,65536,0
+0x4AFD,Ambient temperature between 30 Â° C and 39 Â° C,%,unsigned int,100,65536,0
+0x4AFE,Ambient temperature greater than 39 Â° C,%,unsigned int,100,65536,0
+0x4B23,Misfire detection counter cylinder 1,-,unsigned int,1,1,0
+0x4B24,Misfire detection counter cylinder 2,-,unsigned int,1,1,0
+0x4B25,Misfire detection counter cylinder 3,-,unsigned int,1,1,0
+0x4B30,Misfire detection counter cylinder 4,-,unsigned int,1,1,0
+0x4B31,Misfire detection counter cylinder 5,-,unsigned int,1,1,0
+0x4B32,Misfire detection counter cylinder 6,-,unsigned int,1,1,0
+0x4B33,Misfire detection counter cylinder 7,-,unsigned int,1,1,0
+0x4B34,Misfire detection counter cylinder 8,-,unsigned int,1,1,0
+0x4B35,Misfire detection counter cylinder 9,-,unsigned int,1,1,0
+0x4B40,Misfire detection counter cylinder 10,-,unsigned int,1,1,0
+0x4B41,Misfire detection counter cylinder 11,-,unsigned int,1,1,0
+0x4B42,Misfire detection counter cylinder 12,-,unsigned int,1,1,0
+0x4B50,Cylinder-specific angular acceleration cylinder 1,rad/sÂ²,signed int,0.0625,1,0
+0x4B51,Cylinder-specific angular acceleration cylinder 2,rad/sÂ²,signed int,0.0625,1,0
+0x4B52,Cylinder-specific angular acceleration cylinder 3,rad/sÂ²,signed int,0.0625,1,0
+0x4B53,Cylinder-specific angular acceleration cylinder 4,rad/sÂ²,signed int,0.0625,1,0
+0x4B54,Cylinder-specific angular acceleration cylinder 5,rad/sÂ²,signed int,0.0625,1,0
+0x4B55,Cylinder-specific angular acceleration cylinder 6,rad/sÂ²,signed int,0.0625,1,0
+0x4B56,Cylinder-specific angular acceleration cylinder 7,rad/sÂ²,signed int,0.0625,1,0
+0x4B57,Cylinder-specific angular acceleration cylinder 8,rad/sÂ²,signed int,0.0625,1,0
+0x4B64,Cylinder-specific angular acceleration cylinder 9,rad/sÂ²,signed int,0.0625,1,0
+0x4B65,Cylinder-specific angular acceleration cylinder 10,rad/sÂ²,signed int,0.0625,1,0
+0x4B66,Cylinder-specific angular acceleration cylinder 11,rad/sÂ²,signed int,0.0625,1,0
+0x4B67,Cylinder-specific angular acceleration cylinder 12,rad/sÂ²,signed int,0.0625,1,0
+0x541D,External charge detected during sleep phase,0/1,unsigned char,1,1,0
+0x541E,External charging active,0/1,unsigned char,1,1,0
+0x5421,Voltage requirement 12V basis,V,unsigned int,0.001,1,0
+0x5422,Reference point for the voltage requirement 12V basis,-,unsigned char,1,1,0
+0x5433,Oxygen storage capacity of the catalyst 1 bank 1,mg,unsigned int,0.1,1,0
+0x5434,Oxygen storage capacity of catalyst 1 bank 2,mg,unsigned int,0.1,1,0
+0x5441,"Lambda offset (sensor 1, bank 2)",-,signed int,0.00003052,1,0
+0x5442,Injection current maximum fuel mass flow injectors,-,unsigned int,0.00390625,1,0
+0x5443,Information about motoring out,0-n,unsigned char,1,1,0
+0x5444,Soot mass in OPF Bank 1,g,signed int,0.01,1,0
+0x5445,Soot mass in OPF bank 2,g,signed int,0.01,1,0
+0x5446,Adapted ash mass in OPF Bank 1,g,signed int,0.0078125,1,0
+0x5447,Adapted ash mass in OPF Bank 2,g,signed int,0.0078125,1,0
+0x5448,Adapted total loading of the OPF Bank 1,g,signed int,0.0078125,1,0
+0x5449,Adapted total loading of the OPF Bank 2,g,signed int,0.0078125,1,0
+0x5452,Oil level min recognition last level (flash-resistant),mm,unsigned int,0.29296875,1,0
+0x5457,Key refill quantity,l,unsigned char,0.1,1,-12.8
+0x5458,Refill quantity for the engine oil,-,unsigned char,0.1,1,0
+0x5463,Low fuel pressure sensor Raw fuel pressure value,hPa,signed int,1,1,0
+0x5476,48V on-board network status,-,unsigned char,1,1,0
+0x5477,48V on-board network status relay,-,unsigned char,1,1,0
+0x547A,State of charge 48V battery,%,unsigned char,0.5,1,0
+0x547B,Current battery voltage 48V battery,V,unsigned int,0.02,1,0
+0x547C,Current battery current 48V battery,A,unsigned int,0.025,1,-819.15
+0x547E,48V electrical system discharge protection,-,unsigned char,1,1,0
+0x547F,48V on-board network generator current,A,signed int,0.2,1,0
+0x5480,48V electrical system generator voltage,V,unsigned int,0.1,1,0
+0x5481,"48V on-board power supply, long drive discharge power",W,signed int,1,1,0
+0x5482,48V on-board network discharge power drive medium,W,signed int,1,1,0
+0x5483,"48V on-board network, short drive discharge power",W,signed int,1,1,0
+0x5484,"48V on-board power supply, medium charging power",W,signed int,1,1,0
+0x5485,"48V on-board power supply, short drive power",W,signed int,1,1,0
+0x5486,Crankshaft position at the start command,Â° KW,unsigned int,0.0234375,1,0
+0x5489,Extrapolation of the remaining distance of the spark plug set,km,signed int,100,1,0
+0x548A,Status generator diagnosis extended,-,unsigned int,1,1,0
+0x549E,Water injection pre-FS metering valve duty cycle,%,unsigned int,0.1,1,0
+0x549F,Water injection pre-FS engine shut-off valve,-,unsigned char,1,1,0
+0x54A0,Water injection pre-FS vent valve,%,unsigned int,0.1,1,0
+0x54A1,Water injection pre-FS target water mass flow (sum of the two banks),kg/h,unsigned int,0.03125,1,0
+0x54A2,Pre-FS water injection Relative water pressure,hPa,signed int,1,1,0
+0x54A3,Water injection Frost counter Water pressure sensor,-,unsigned int,1,1,0
+0x54A7,Water level water control device,%,unsigned char,10,1,0
+0x54A8,Water level Available water control unit,l,unsigned int,0.01,1,0
+0x54B6,Simulated mean temperature OPF bank 1,Â°C,signed int,0.1,1,-273.14
+0x54B7,Measured temperature before OPF,Â°C,signed int,0.1,1,-273.14
+0x54B8,Measured temperature according to OPF,Â°C,signed int,0.1,1,-273.14
+0x54BF,Simulated printing according to OPF Bank 1,hPa,unsigned int,0.0390625,1,0
+0x54C0,Frequency counter actuation of ventilation valve,-,unsigned int,1,1,0
+0x54C2,Frequency counter actuation of engine shut-off valve,-,unsigned int,1,1,0
+0x54C4,Frequency counter actuation of dosing valve 1,-,unsigned int,1,1,0
+0x54C6,Frequency counter actuation of dosing valve 2,-,unsigned int,1,1,0
+0x550B,Current fuel viscosity,-,unsigned int,0.00005,1,0
+0x550D,Percent alcohol in fuel,%,unsigned char,0.39215686,1,0
+0x550E,Current injection counter reading since the very beginning,-,unsigned long,1,1,0
+0x550F,Shutdown time,s,signed long,1,1,0
+0x5511,Air mass flow participating in combustion,kg/h,signed int,0.1,1,0
+0x5512,Ambient temperature,Â°C,unsigned char,0.5,1,-40
+0x5513,Ambient temperature unfiltered,Â°C,unsigned char,0.5,1,-40
+0x5514,Physical raw value ambient temperature,Â°C,signed int,0.1,1,-273.14
+0x5515,"Measured engine temperature in the first start of the driving cycle, linearized and converted",Â°C,signed int,0.1,1,-273.14
+0x5516,Maximum engine temperature that has occurred,Â°C,signed int,0.1,1,-273.14
+0x5517,Minimum engine temperature that occurred,Â°C,signed int,0.1,1,-273.14
+0x5518,Minimum value raw value of the intake air temperature,Â°C,signed int,0.1,1,-273.14
+0x5519,Maximum value Raw value of the intake air temperature,Â°C,signed int,0.1,1,-273.14
+0x551A,Model-calculated maximum intake air temperature,Â°C,signed int,0.1,1,-273.14
+0x552E,Status of frictional connection in monitoring function,0/1,unsigned char,1,1,0
+0x5531,Coordinated target torque on the wheel,Nm,signed int,1,1,0
+0x5532,Translational acceleration,m/sÂ²,signed int,0.001,1,0
+0x5533,Acceleration of the secondary axis,m/sÂ²,signed int,0.001,1,0
+0x5534,Status emergency running of entire engine,-,unsigned long,1,1,0
+0x5536,Status clutch K0,-,unsigned char,1,1,0
+0x5537,Speed electric motor,-,unsigned int,0.5,1,-5000
+0x553A,Acceleration of the primary axis,m/sÂ²,signed int,0.001,1,0
+0x553B,Target wheel torque from accelerator pedal request,Nm,signed int,1,1,0
+0x553C,Torque limitation status,-,unsigned long,1,1,0
+0x5541,Actual gear in the monitoring function from gear sensor,-,unsigned char,1,1,0
+0x5549,Voltage additional power storage,V,unsigned int,0.001,1,0
+0x554B,Irregular burns event counter,-,unsigned char,1,1,0
+0x5559,Measured crankcase ventilation pressure,hPa,signed int,0.01,1,0
+0x5562,Setpoint eccentric angle VVT,Â°,signed int,0.1,1,0
+0x556F,Charge status of additional power storage,%,unsigned char,1,1,0
+0x5571,Temperature additional storage tank,Â°C,unsigned char,1,1,-127
+0x5572,Electricity additional storage,A,unsigned int,0.05,1,-1638.35
+0x5578,Factor estimated ZK sooting,-,unsigned int,0.00001526,1,0
+0x5582,Ash influence bank 2,-,signed int,0.001,1,0
+0x5583,Soot mass particle filter bank 2,g,signed int,0.001,1,0
+0x5584,Sensed differential pressure after the particulate filter bank 2,hPa,signed int,1,1,0
+0x5585,Raw voltage value from ADC Bank 2,mV,signed int,0.2,1,0
+0x558B,Adapted ash mass in the particle filter,-,signed int,0.001,1,0
+0x558C,Adapted total loading of the particle filter,-,signed int,0.001,1,0
+0x558E,Mileage fuel delivery module,km,signed long,1,1,0
+0x558F,Operating hours of fuel delivery module,h,unsigned long,0.5,1,0
+0x5598,Adapted ash mass in the particulate filter bank 2,-,signed int,0.001,1,0
+0x5599,Adapted total loading of the particulate filter bank 2,-,signed int,0.001,1,0
+0x559C,Raw value position lower mechanical stop electrical wastegate (WG closed) bank 2,mm,signed int,0.00097656,1,0
+0x559D,Raw value position upper mechanical stop electrical wastegate (flat share open) bank 2,mm,signed int,0.00097656,1,0
+0x559F,Operating status of electrical wastegate bank 2,-,unsigned char,1,1,0
+0x55A4,Counter estimated burn-free processes of the spark plug soot,-,unsigned int,1,1,0
+0x55A5,Rudimentarily estimated spark plug temperature,Â°C,signed int,0.1,1,-273.14
+0x55C8,Temperature sensor in front of OPF bank 1,Â°C,signed int,0.1,1,-273.14
+0x55C9,Voltage raw value temperature sensor in front of OPF bank 1,mV,signed int,0.2,1,0
+0x55CB,Temperature temperature sensor in front of OPF bank 2,Â°C,signed int,0.1,1,-273.14
+0x55CC,Voltage raw value temperature sensor in front of OPF bank 2,mV,signed int,0.2,1,0
+0x55CE,Temperature sensor behind OPF bank 1,Â°C,signed int,0.1,1,-273.14
+0x55CF,Voltage raw value temperature sensor behind OPF bank 1,mV,signed int,0.2,1,0
+0x55D1,Temperature sensor behind OPF bank 2,Â°C,signed int,0.1,1,-273.14
+0x55D2,Voltage raw value temperature sensor behind OPF bank 2,mV,signed int,0.2,1,0
+0x5607,Actual speed,-,unsigned char,1,1,0
+0x5608,Supply voltage,V,signed int,0.1,1,0
+0x5609,Power consumption,A,unsigned char,0.2,1,0
+0x560A,Temperature on the electronics,Â°C,signed int,1,1,-50
+0x5615,Status learning process misfire detection,-,unsigned char,1,1,0
+0x5616,Differential temperature of the respective cooling requirement,-,signed int,0.01,1,0
+0x5617,Differential temperature of the respective cooling requirement when switching off,-,signed int,0.01,1,0
+0x5618,Filtered fuel flow,%,signed int,0.01,1,0
+0x5621,Rail pressure corrected by the learned rail pressure sensor offset,MPa,unsigned int,5,8192,0
+0x5624,Current output ignition angles,Â° KW,signed char,0.75,1,0
+0x5626,Actual value outlet spread bank 2,Â° KW,signed int,0.1,1,0
+0x5627,Actual value inlet spread bank 2,Â° KW,signed int,0.1,1,0
+0x5629,Mass flow HFM 16-bit size bank 2,kg/h,unsigned int,0.1,1,0
+0x562A,"Intake air temperature, linearized and converted, bank 2",Â°C,unsigned char,0.75,1,-48
+0x562C,Basic electrical system generator voltage,V,unsigned int,0.001,1,0
+0x562D,Basic electrical system generator power,A,signed int,1,1,0
+0x562E,Basic electrical system producer status,-,unsigned char,1,1,0
+0x562F,Basic electrical system converter current,A,signed int,1,1,0
+0x5634,Supply voltage DME,mV,signed int,1,0.05,0
+0x563B,Current value stoichiometric ratio,-,unsigned int,0.00024414,1,0
+0x5640,Actual lambda from probe,-,unsigned int,0.00024414,1,0
+0x5642,Moment reserve,Nm,unsigned int,0.5,1,-1023
+0x5643,Torque of torque adaptation,-,signed int,0.1,1,0
+0x564F,Internal gear (including neutral and reverse),-,unsigned char,1,1,0
+0x5652,Status bit whether IGR high active,-,unsigned char,1,1,0
+0x5653,Status bit whether IGR medium is active,-,unsigned char,1,1,0
+0x5655,Default generator setpoint voltage (output value),V,unsigned int,0.1,1,0
+0x5656,Volume flow of fuel,ml/s,unsigned int,0.00119209,1,0
+0x5658,Filtered rail pressure actual value (absolute pressure),MPa,unsigned int,0.002,1,0
+0x5665,Output duty cycle for the controller,%,signed int,0.01,1,0
+0x56A5,Lithium ion starter battery - voltage cell 1,V,unsigned int,0.001,1,1
+0x56A6,Lithium ion starter battery - voltage cell 2,V,unsigned int,0.001,1,1
+0x56A7,Lithium ion starter battery - voltage cell 3,V,unsigned int,0.001,1,1
+0x56A8,Lithium ion starter battery - voltage cell 4,V,unsigned int,0.001,1,1
+0x56A9,Lithium ion starter battery - status symmetrization,-,unsigned char,1,1,0
+0x56AA,Lithium-ion starter battery - degree of desymmetrization of the memory,-,unsigned char,1,1,0
+0x56AB,Lithium ion starter battery - deep discharge status (with single cell status at LISB),-,unsigned char,1,1,0
+0x56AC,Lithium ion starter battery - maximum allowable discharge current,A,unsigned int,1,1,0
+0x56AD,Lithium ion starter battery - maximum permissible charging current,A,unsigned int,1,1,0
+0x56AE,Lithium ion starter battery - nominal voltage of the storage unit,V,unsigned int,0.001,1,0
+0x56AF,Lithium ion starter battery - quality value internal resistance,mOhm,unsigned char,0.002,1,0
+0x56B6,Average of the pressure sensor values of all existing pressure sensors,hPa,unsigned int,0.125,1,0
+0x56B8,Status pressure sensor diagnosis (1: motor is stationary 2: motor in LL 3: motor in VL 0: no dual comparison possible),-,unsigned char,1,1,0
+0x56C1,Setpoint rail pressure control,MPa,unsigned int,0.002,1,0
+0x56C2,Filtered actual rail pressure value from CAN (absolute pressure),MPa,unsigned int,0.002,1,0
+0x56D5,Voltage behind injection / ignition relay,V,signed int,0.001,1,0
+0x56D7,Unfiltered rail pressure actual value (abs.),MPa,unsigned int,0.002,1,0
+0x56DA,Pressure value of the crankcase differential pressure sensor,hPa,signed int,0.01,1,0
+0x56DB,Crankcase differential pressure sensor voltage,mV,signed int,0.2,1,0
+0x56DD,Difference between pressure value sensor and model,hPa,signed int,0.0390625,1,0
+0x56E0,Adapted crankcase ventilation pressure,hPa,signed int,0.01,1,0
+0x56E1,Output duty cycle for the controller,-,signed int,0.01,1,0
+0x56ED,Pole voltage of the storage,V,unsigned int,0.001,1,0
+0x56EE,Current of memory,A,signed int,0.05,1,0
+0x56EF,Storage tank temperature,Â°C,signed char,1,1,0
+0x56F0,SOC of the memory,%,signed char,1,1,0
+0x56F1,SOC Quality value of the memory,%,signed char,1,1,0
+0x56F2,Cell voltage cell 1,V,unsigned int,0.001,1,0
+0x56F3,Cell voltage cell 2,V,unsigned int,0.001,1,0
+0x56F4,Cell voltage cell 3,V,unsigned int,0.001,1,0
+0x56F5,Cell voltage cell 4,V,unsigned int,0.001,1,0
+0x56F6,Cell voltage cell 5,V,unsigned int,0.001,1,0
+0x56F7,Cell voltage cell 6,V,unsigned int,0.001,1,0
+0x56FA,Maximum permissible vehicle acceleration,m/sÂ²,signed int,0.001,1,0
+0x5700,Desired torque transmission input main drive axle without driving dynamics filtering,Nm,signed int,0.1,1,0
+0x5705,Assembly mode currently active,0/1,unsigned char,1,1,0
+0x5734,Status of transmission interventions via CAN,-,unsigned char,1,1,0
+0x573A,Target differential pressure intake manifold,hPa,signed int,0.0390625,1,0
+0x573C,Differential pressure in front of the throttle valve between the start and the end of the dynamic test SSP,hPa,signed int,0.078125,1,0
+0x575F,Relative SOC,-,signed int,0.0001,1,0
+0x5761,Clutch temperature,-,signed int,0.015625,1,0
+0x576A,Raw value position of upper mechanical stop from electrical wastegate (flat share open),mm,signed int,0.00097656,1,0
+0x576B,Raw value position of the lower mechanical stop from the electrical wastegate (WG closed),mm,signed int,0.00097656,1,0
+0x5773,Ash influence,-,signed int,0.001,1,0
+0x5774,Soot mass in the particle filter,g,signed int,0.001,1,0
+0x5784,Operating time since the last successful regeneration,s,signed long,1,1,0
+0x5788,E-fan target speed from WMK,%,unsigned char,0.390625,1,0
+0x578C,Temperature raw value of the intake air temperature sensor 3,Â°C,signed int,0.1,1,-273.14
+0x579B,Temperature in the particulate filter bank 1,Â°C,signed int,0.1,1,-273.14
+0x579E,Temperature in the particulate filter bank 2,Â°C,signed int,0.1,1,-273.14
+0x57A0,Reference torque for misfire detection,%,unsigned int,0.00152588,1,0
+0x57A1,Target air mass flow,kg/h,unsigned int,0.1,1,0
+0x57A4,Total start counter,-,unsigned long,1,1,0
+0x57A9,Raw pressure value pressure sensor gasoline particle filter,hPa,signed int,1,1,0
+0x57AE,Setpoint speed E-fan default WM,%,unsigned int,0.00152588,1,0
+0x57B5,Generator speed,1/min,unsigned int,1,1,0
+0x57C3,Inlet spread,Â° KW,signed int,1,10,0
+0x57C9,Raw voltage value of the pressure sensor Otto particle filter from the ADC,mV,signed int,0.2,1,0
+0x57CA,Intake manifold pressure measured with pressure sensor on the intake manifold (DS-S),hPa,unsigned int,0.0390625,1,0
+0x57D0,Filtering pressure difference ambient pressure - intake manifold pressure,hPa,signed int,0.0390625,1,0
+0x57D1,Pressure at the suction jet pump,hPa,unsigned int,0.0390625,1,0
+0x57D2,Pressure ejector pump raw value,hPa,unsigned int,0.0390625,1,0
+0x57E1,Relative fuel mass,%,unsigned int,0.046875,1,0
+0x57E3,Time since the last refueling,min,unsigned int,1,1,0
+0x57F0,Operating status of the electrical wastegate,-,unsigned char,1,1,0
+0x57FB,Duty cycle phaser inlet camshaft bank 1,%,signed int,0.00305176,1,0
+0x5805,"Motor temperature, linearized and converted",Â°C,signed int,0.1,1,-273.14
+0x5807,Factor from lambda control adaptation for bank 1,-,unsigned int,2,65536,0
+0x5808,Lambda integrator bank 2,-,unsigned int,2,65536,0
+0x5809,Lambda adaptation total bank 2,-,unsigned int,2,65536,0
+0x580A,Sensor temperature,Â°C,unsigned int,0.09375,1,5
+0x580F,Intake air temperature,Â°C,unsigned char,0.75,1,-48
+0x5813,Relative air filling,%,unsigned char,0.75,1,0
+0x5816,Lambda setpoint based on the installation location of the lambda sensor,-,unsigned int,16,65536,0
+0x5818,Air mass flow,kg/h,unsigned char,4,1,0
+0x581A,Angle inlet valve opens based on LWOT,Â° KW,signed int,0.015625,1,0
+0x581B,Target angle camshaft inlet opens,Â° KW,signed int,0.015625,1,0
+0x581C,Angle exhaust valve closes based on LWOT,Â° KW,signed int,0.015625,1,0
+0x581D,Target angle camshaft exhaust closes,Â° KW,signed int,0.015625,1,0
+0x581E,"Intake air temperature, linearized and converted",Â°C,unsigned char,0.75,1,-48
+0x5820,Status of terminal 15,0-n,unsigned char,1,1,0
+0x5821,Control unit temperature,Â°C,unsigned char,0.75,1,-48
+0x5822,Oil temperature,Â°C,unsigned char,1,1,-60
+0x5825,Tension,V,signed int,1,100,0
+0x5826,Throttle valve angle from potentiometer 1,%,signed int,0.0078125,1,0
+0x5827,Duty cycle for lambda probe heating,%,unsigned int,200,65536,0
+0x5828,Duty cycle lambda probe heating bank 2,%,unsigned int,200,65536,0
+0x5829,Normalized heating output of the lambda probe behind cat,-,unsigned char,1,100,0
+0x582A,Normalized heating output of the lambda probe behind cat bank 2,-,unsigned char,1,100,0
+0x582B,Torque consumption of the converter via CAN,%,unsigned int,100,65536,0
+0x582C,"Lambda probe actual value, corrected for additional amplitude",-,unsigned int,16,65536,0
+0x582F,Exhaust gas temperature after catalytic converter from model,Â°C,signed int,0.1,1,-273.14
+0x5830,Dynamic value of the LSU,-,unsigned int,16,65536,0
+0x5831,Dynamic value of LSU bank 2,-,unsigned int,16,65536,0
+0x5834,Ambient pressure from sensor raw value,hPa,unsigned int,10,256,0
+0x583A,Intake air temperature at start,Â°C,unsigned char,0.75,1,-48
+0x583B,Fuel tank level,l,unsigned char,1,1,0
+0x583C,Battery voltage value recorded by the AD converter,V,unsigned char,0.0942,1,0
+0x583D,Operating hours counter,min,unsigned int,6,1,0
+0x583F,"Target value for throttle valve angle, based on lower stop",% DK,unsigned char,100,255,0
+0x5840,Throttle angle of the emergency air position,%,signed int,0.0078125,1,0
+0x5844,Chip temperature of the machine,Â°C,signed int,1,10,0
+0x5845,Heating voltage in front of the catalyst of a broadband lambda probe (ADC value),V,unsigned int,5,1024,0
+0x5849,Lambda probe voltage (4.88mV / LSB) behind the catalytic converter,V,unsigned int,0.00488281,1,0
+0x584A,Current status of electric machine,-,unsigned int,1,1,0
+0x584B,Lambda probe voltage (4.88mV / LSB) behind catalyst bank 2,V,unsigned int,0.00488281,1,0
+0x584C,Voltage throttle valve potentiometer 2,V,unsigned int,80,65536,0
+0x584D,Mass flow of tank ventilation into the intake manifold,kg/h,unsigned int,25.6,65536,0
+0x584E,Voltage throttle valve potentiometer 1,V,unsigned int,80,65536,0
+0x584F,Environmental condition BNS error,-,unsigned char,1,1,0
+0x5850,Signal voltage of the coolant temperature sensor,mV,unsigned int,0.2,1,0
+0x5852,IBS battery power,A,unsigned int,1,50,-200
+0x5853,IBS battery voltage,V,unsigned int,1,1000,0
+0x5854,IBS battery temperature,Â°C,unsigned char,3,4,-48
+0x5866,Relative level of the engine oil,-,unsigned char,1,1,0
+0x5868,Status Stand Consumer Registered Part 1,-,unsigned char,1,1,0
+0x5869,Status Stand consumer registered part 2,-,unsigned char,1,1,0
+0x586A,Current battery voltage,mV,signed int,1,0.05,0
+0x586B,Time in which the quiescent current is 80-200 mA,min,unsigned char,224,15,0
+0x586C,Time in which quiescent current is 200-1000 mA,min,unsigned char,224,15,0
+0x586D,Maximum frozen supply voltage,V,unsigned char,0.1,1,0
+0x586E,Time in which the quiescent current is greater than 1000 mA,min,unsigned char,224,15,0
+0x586F,Oil pressure,hPa,signed int,1,1,0
+0x5873,Lambda setpoint based on the installation location of the lambda sensor bank 2,-,unsigned int,16,65536,0
+0x5876,Unfiltered high pressure raw value (relative pressure),MPa,unsigned int,5,10000,0
+0x5877,VVT motor rotor angle,Â°,unsigned int,1,1,0
+0x587B,VVT motor current to be set by the position controller,A,signed int,400,65536,0
+0x587D,Status zero gear detection,-,unsigned char,1,1,0
+0x587E,Motor temperature reference value from model,Â°C,signed int,0.1,1,-273.14
+0x587F,Duty cycle electric fan,%,signed int,0.01220703,1,0
+0x5881,Actual gear,-,unsigned char,1,1,0
+0x5882,Engine starting temperature,Â°C,signed int,0.1,1,-273.14
+0x5883,Voltage knock values cylinder 1,V*ms,unsigned long,0.05,65536,0
+0x5885,Voltage knock values cylinder 2,V*ms,unsigned long,0.05,65536,0
+0x5886,Voltage knock values cylinder 3,V*ms,unsigned long,0.05,65536,0
+0x5887,Utilization of the machine,-,unsigned int,1,200,0
+0x5888,Voltage knock values cylinder 4,V*ms,unsigned long,0.05,65536,0
+0x5889,Lambda actual value,-,unsigned int,16,65536,0
+0x588A,Lambda actual value bank 2,-,unsigned int,16,65536,0
+0x588B,Time since the engine started,s,unsigned int,0.01,1,0
+0x588C,Ceramic temperature of the LSU,Â°C,unsigned int,0.0234375,1,-273.15
+0x588F,Ceramic temperature of LSU bank 2,Â°C,unsigned int,0.0234375,1,-273.15
+0x5890,Engine radiator outlet temperature (coolant),Â°C,unsigned char,0.75,1,-48
+0x5891,Clutch motor torque actual value,Nm,signed int,0.5,1,0
+0x5892,Difference between ambient pressure and brake booster pressure from pressure sensor (raw value),hPa,signed int,10,256,0
+0x5894,Voltage knock values cylinder 5,V*ms,unsigned long,0.05,65536,0
+0x5895,Voltage knock values cylinder 6,V*ms,unsigned long,0.05,65536,0
+0x5896,Exhaust gas temperature behind main catalyst from model,Â°C,signed int,0.1,1,-273.14
+0x5897,Exhaust gas temperature behind main catalyst from model bank 2,Â°C,unsigned int,0.0234375,1,-273.15
+0x5898,Default machine target voltage,V,unsigned int,1,1000,0
+0x589A,Duty cycle zero gear sensor,%,unsigned int,1,100,0
+0x589D,Number of detected VVT position control errors,-,unsigned int,1,1,0
+0x589F,Battery temperature,Â°C,unsigned char,0.75,1,-48
+0x58A0,Discharge during quiescent current violation,Ah,unsigned int,65536,3600000,0
+0x58A2,Actual value of the eccentric angle VVT,Â°,unsigned int,1,10,0
+0x58A3,Rel. Eccentric angle on the upper mech. attack,Â°,signed int,1,10,0
+0x58A4,Number of recognized VVT position control error warnings irreversible,-,unsigned int,1,1,0
+0x58A5,Number of detected VVT position control error warnings reversible,-,unsigned int,1,1,0
+0x58A6,Relative eccentric angle without reference to a stop,Â°,signed int,1,10,0
+0x58A7,Shutdown time from relative minute counter until engine start,min,unsigned int,1,1,0
+0x58A8,Rel. Eccentric angle on the lower mech. attack,Â°,signed int,1,10,0
+0x58AA,Adjustment range of the eccentric angle,Â°,unsigned int,1,10,0
+0x58AC,Terminal voltage of the electric machine,V,unsigned int,1,100,0
+0x58AE,Period duration for mass flow from HFM,Âµs,unsigned int,1,10,0
+0x58B7,Current brake pressure,hPa,unsigned char,1,1,0
+0x58BB,Electricity for VVT motor,A,signed int,400,65536,0
+0x58BD,Status error overload VVT1,-,unsigned char,1,1,0
+0x58CB,Total thermal load VVT,-,unsigned int,1,1,0
+0x58D1,Engine temperature when switched off,Â°C,signed int,0.1,1,-273.14
+0x58D2,Damper setpoint in degrees,-,unsigned int,0.5,1,0
+0x58D3,Actual damper value in degrees,-,unsigned int,0.5,1,0
+0x58D4,Start condition for frictional connection fulfilled,-,unsigned char,1,1,0
+0x58D9,Pedometer throttle return spring test,-,unsigned int,1,1,0
+0x58DA,Coordinated moment for filling,%,unsigned int,100,65536,0
+0x58DC,Interval counter for emissions-related misfires (0-1000 KW rev. Or 0-500 NW rev.),-,unsigned int,1,1,0
+0x58DD,Boost pressure raw value,hPa,unsigned int,20,256,0
+0x58DE,Voltage pressure sensor in front of throttle valve,V,unsigned int,5,1024,0
+0x58E4,Actual operating mode,-,unsigned char,1,1,0
+0x58E5,Filtered spark burning time cylinder 1,ms,unsigned int,0.001,1,0
+0x58E9,Supply voltage electr. water pump,V,unsigned char,0.1,1,0
+0x58EA,Actual speed electr. water pump,1/min,unsigned char,1,1,0
+0x58EC,Electronics temperature electr. water pump,Â°C,unsigned char,1,1,-50
+0x58ED,Current consumption electr. water pump,A,unsigned char,1,2,0
+0x58F3,Unfiltered low pressure raw value,kPa,unsigned int,1,10,0
+0x58F4,Voltage fuel low pressure sensor in 1 ms grid,V,unsigned int,5,1024,0
+0x58F6,Setpoint voltage of the VVT position controller,V,signed int,51.2,65536,0
+0x58FB,Delta probe offset master control,-,signed int,2,65536,0
+0x5902,Filtered spark burning time cylinder 5,ms,unsigned int,0.001,1,0
+0x5903,Filtered spark burning time cylinder 6,ms,unsigned int,0.001,1,0
+0x5909,Minimum frozen supply voltage,V,unsigned char,0.1,1,0
+0x590F,Status of fault memory entry without critical DMF fault,-,unsigned char,1,1,0
+0x5910,Set speed of electric water pump,1/min,unsigned char,1,1,0
+0x5911,Set speed of electric water pump for cooling the electric machine and EME,1/min,unsigned char,1,1,0
+0x5916,Relative state of charge NV battery,%,unsigned char,0.5,1,0
+0x5917,DC-DC converter status,-,unsigned char,1,1,0
+0x5918,Utilization of the DC-DC converter,%,unsigned char,0.5,1,0
+0x5927,"Is position electrical wastegate (0: WG closed, 100 WG open)",%,unsigned char,100,256,0
+0x5928,"Is position electrical wastegate 2 (0: apartment closed, 100 apartment open)",%,unsigned char,100,256,0
+0x592E,Engine shut-off angle,Â° KW,signed int,1,45.51111111,0
+0x5938,Ethanol content - raw value from the sensor,-,unsigned int,0.00003052,1,0
+0x5939,Ethanol go Ev,-,unsigned int,0.00003052,1,0
+0x593B,Gear sensor error message,-,unsigned char,1,1,0
+0x5940,Actual gear information from the gear sensor,-,unsigned char,1,1,0
+0x5941,Gear sensor position in X (Beta) direction,Â°,unsigned long,1,20,0
+0x5942,Gear sensor position in Y (Beta) direction,Â°,unsigned long,1,20,0
+0x5949,Level of the left half of the tank,l,unsigned char,1,2,0
+0x594A,Level of the right half of the tank,l,unsigned char,1,2,0
+0x594B,Control duty cycle of the fuel pump,%,signed int,1,100,0
+0x594C,"Fuel temperature (sensor, model or fixed substitute value)",Â°C,signed int,0.1,1,-273.14
+0x5956,Differential pressure ejector pump - environment,hPa,signed int,10,256,0
+0x5958,Component temperature raw value,Â°C,signed int,1,10,-273.14
+0x5960,Actual value of stroke adjustment,mm,unsigned int,0.001,1,0
+0x5981,Current DC-DC converter,A,unsigned char,1,1,0
+0x5982,Control of stand consumers,-,unsigned char,1,1,0
+0x5986,Energy status for terminal control,-,unsigned char,1,1,0
+0x598A,Output current of the electric machine,A,signed int,1,8,0
+0x59A2,Mileage when installing the current battery,km,unsigned int,10,1,0
+0x59A3,Day of the last battery change,-,unsigned int,1,1,0
+0x59A5,Quality value actual capacity,Ah,unsigned char,1,1,0
+0x59A7,Terminal voltage,V,unsigned int,0.001,1,0
+0x59A8,Current temperature memory,Â°C,unsigned char,1,1,-126
+0x59AB,Quality value of the SOH,%,signed char,1,1,0
+0x59AC,"Basic on-board network, storage charge status",%,unsigned char,1,1,-126
+0x59AD,Basic on-board network Storage state of charge quality value,%,unsigned char,1,1,-126
+0x59AE,Internal resistance of the store,mOhm,unsigned int,0.002,1,0
+0x59AF,Quality value internal resistance,mOhm,unsigned char,0.002,1,0
+0x59B3,Total discharge of the storage tank,-,unsigned char,1,1,0
+0x59B4,Basic electrical system deep discharge IBS,-,unsigned char,1,1,0
+0x59B6,Total duration of total discharges,-,unsigned int,1,1,0
+0x59BD,Inlet NW: Angular offset fine adaptation,Â° KW,signed long,0.02197266,1,0
+0x59BE,Outlet NW: angular offset fine adaptation,Â° KW,signed long,0.02197266,1,0
+0x59BF,Inlet NW: Angular offset reference adaptation,Â° KW,signed int,0.02197266,1,0
+0x59C0,Outlet NW: Angular offset reference adaptation,Â° KW,signed int,0.02197266,1,0
+0x59C2,Counter angle correction in the event of VVT temperature overload,-,unsigned char,1,1,0
+0x59D1,Maximum speed clutch,1/min,unsigned int,1,1,0
+0x59D4,"Intake air temperature before throttle valve, measured",Â°C,unsigned int,0.0234375,1,-273.15
+0x59E8,Medium voltage rail pressure sensor,V,unsigned int,0.00030518,1,0
+0x59EB,Vehicle speed on the front or rear axle or in the vehicle&#39;s center of gravity,km/h,unsigned int,0.0078125,1,0
+0x59F6,"Minimum, absolute, permitted state of charge of the HV battery",%,unsigned char,0.5,1,0
+0x59FA,Actual ignition angle,Â° KW,signed char,0.75,1,0
+0x59FD,Target ignition angle from torque intervention,Â° KW,signed char,0.75,1,0
+0x6318,Actual value of electric fan,%,signed int,1,100,0
+0x631C,Control value for electric water pump for LLK cooling bank 2,1/min,unsigned int,1,1,0
+0x631D,Control value electric water pump for 48V component cooling,1/min,unsigned int,1,1,0
+0x6320,Control value DKG shut-off valve,%,signed int,1,81.92,0
+0x64B5,Output manipulated variable circulating air valve,%,signed int,0.01,1,0
+0x6518,Setpoint electric fan,%,signed int,1,100,0
