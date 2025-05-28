@@ -30,6 +30,7 @@ This project provides structured C header files containing BMW engine PID (Param
        // Access n55_pid_data_data[i]
    }
    ```
+3. **In order to send PID request, refer to "Sample BMW Enhanced PID Request" from the website.
 
 ## Struct Format Example
 Each header file defines a struct and an array, e.g.:
